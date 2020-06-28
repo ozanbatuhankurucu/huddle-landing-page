@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;1,700&family=Poppins:wght@700&display=swap');
+*{
+    box-sizing: border-box;
+}
+
+/* General Styles */
+body{
+    color: hsl(192, 100%, 9%);
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    font-size: 1.15em;
+}
+
+h1,h2{
+    font-family: 'Poppins', sans-serif;
+}
+img{
+    max-width: 100%;
+}
+.container{
+    /* Dikey Yatay*/
+    padding: 0 20px;
+    margin: 0 auto;
+    max-width: 100%;
+    width: 1200px;
+}
+header{
+    background-image: url("images/bg-hero-desktop.svg");
+    background-size: cover;
+    background-position: center center;
+    background-color: hsl(193, 100%, 96%);
+    padding: 40px 0;
+}
+.flex{
+    display: flex;
+    align-items: center;
+}
+.flex > div, .flex ul {
+    flex: 1;
+}
+.align-start {
+	align-items: flex-start;
+}
+nav{
+    justify-content: space-between;
+    margin-bottom: 50px;
+    align-items: center;
+}
+.btn{
+    font-size: 16px;
+    font-weight: 700;
+    border-radius: 50px;
+    padding: 10px 50px;
+    background-color: #fff;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+}
+.btn-primary{
+    background-color: hsl(322, 100%, 66%);
+    color: white;
+}
+.box{
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+    border-radius: 20px;
+    margin: 40px 0px;
+    padding: 40px;
+}
+.small-box{
+    display: inline-block;
+    position: relative;
+	margin-bottom: -50%;
+	z-index: 1;
+}
+.center-small-b{
+    text-align: center;
+}
+.box img{
+    width: 80%;
+}
+
+footer{
+    background-color: hsl(192, 100%, 9%);
+    color: #fff;
+    padding: 180px 0 60px;
+}
+
+footer ul{
+    list-style-type: none;
+}
+footer ul li {
+    margin-bottom: 25px;
+}
+footer p{
+    text-align: right;
+}
+footer .social-media {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+footer .circle {
+	border: 1px solid #fff;
+	border-radius: 50%;
+	color: #fff;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	margin-right: 10px;
+	height: 40px;
+	width: 40px;
+	text-decoration: none;
+}
+
+@media screen and (max-width: 768px) {
+	body {
+		text-align: center;
+	}
+
+	nav.flex {
+		flex-direction: row;
+	}
+
+	.header-img {
+		margin-top: 40px;
+		margin-left: 0;
+		width: 100%;
+	}
+
+	.flex {
+		flex-direction: column;
+	}
+
+	.box-reverse-mobile {
+		flex-direction: column-reverse;
+	}
+
+	footer ul {
+		padding: 0;
+		width: 100%;
+	}
+
+	footer p {
+		text-align: center;
+	}
+}
